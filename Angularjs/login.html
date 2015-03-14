@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
+	</head>	
+
+	
+	<body>
+	
+		<div ng-app="loginApp" ng-controller="LoginController as login">
+			<form name="loginForm" ng-hide="loginValid" novalidate>
+				<div>
+					<p>Character Name: <input type="text" name="user" ng-model="username" ng-minlength="3" ng-pattern="/^[a-z]+$/i" required>
+						<span style="color:red" ng-show="loginForm.user.$invalid">
+							<span ng-show="loginForm.user.$error.required">Username is required.</span>
+							<span ng-show="loginForm.user.$dirty && loginForm.user.$error.minlength">Minimum length not met. Three characters are required.</span>
+							<span ng-show="loginForm.user.$dirty && loginForm.user.$error.pattern">Invalid name.  Only alphabetical characters are allowed.</span>
+						</span>
+					</p>
+					<p>Password: <input type="password" name="pass" ng-model="password" ng-minlength="6" ng-pattern="/^[a-zA-Z0-9_!@#$%^&+-]+$/" required>
+	  					<span style="color:red" ng-show="loginForm.pass.$invalid">
+	  						<span ng-show="loginForm.pass.$error.required">Password is required.</span>
+	  						<span ng-show="loginForm.pass.$dirty && loginForm.pass.$error.minlength">Minimum length not met. Six characters are required.</span>
+	  						<span ng-show="loginForm.pass.$dirty && loginForm.pass.$error.pattern">Entry contains invalid characters. Valid characters are alphanumeric and (!@#$%^&+-_).</span>
+	  					</span>
+					</p>
+					<button ng-disabled="loginForm.user.$invalid || loginForm.pass.$invalid" ng-click="submitLogin()">Login</button>
+				</div>
+			</form>
+			<div ng-show="loginValid">
+				<h2>Hey there, <i ng-bind="username"></i>!</h2>
+				<br>
+				<button ng-click="logout()">Logout</button>
+			</div>
+		</div>	
+			
+			
+		<script src="scripts/app.js"></script>
+		<script src="scripts/loginsrvc.js"></script>
+		<script src="scripts/loginctrl.js"></script>
+	</body>
+
+
+</html>
