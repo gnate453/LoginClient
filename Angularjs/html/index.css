@@ -1,8 +1,12 @@
-#eula-div {
+#index-body {
 	background-image: url("../textures/clouds.jpg");
 }
 
-#eula-p {
+#eula-div {
+	background-image: url("../textures/cement.jpg");
+}
+
+#eula-span {
 	background-image: url("../textures/white-paper.jpg");
 }
 
