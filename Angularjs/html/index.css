@@ -16,10 +16,13 @@
 }
 
 #eula-license-div {
-	background-image: url("../textures/charcoal-gray-fiber.jpg");
-	color:red;
+	background-image: url("../textures/sage-green-paper.jpg");
 	margin-left:9%;
 	margin-right:9%;
+	padding:1%;
+	border-width:4px;
+	border-radius:4px;
+	border-style: inset;
 }
 
 #eula-cc-img {
