@@ -16,6 +16,8 @@
 }
 
 #eula-license-div {
+	background-image: url("../textures/charcoal-gray-fiber.jpg");
+	color:red;
 	margin-left:9%;
 	margin-right:9%;
 }
