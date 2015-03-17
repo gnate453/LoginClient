@@ -1,17 +1,9 @@
-/**
- * 
- */
-angular.module('loginApp')
+
+angular.module('mapGameApp')
 .controller('LoginController',['$scope', 'loginService', function ($scope, loginService) {
-	$scope.loginValid = 'false';
 	$scope.credentials =  { username:"", password:""};
 	
 	$scope.login = function login(){
-		$scope.loginValid = loginService.validate($scope.credentials);
+		loginService.login($scope.credentials);
 	}
-	
-	$scope.logout = function logout(){
-		$scope.loginValid = 'false';
-	}
-	
 }]);

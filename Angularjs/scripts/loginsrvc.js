@@ -1,16 +1,27 @@
 /**
  * 
  */
-angular.module('loginApp')
-.factory('loginService', [function () {
+angular.module('mapGameApp')
+.factory('loginService', ['$location', function ($location) {
 
 	
-	var validate = function (credentials) {
-		
+	var login = function (credentials) {
 		credentials.password="";
+		//TODO: fetch entry from login table, compare provided password
+		//if true Reroute to home, else error message.
+		$location.path('/home');
+		logout = 'false';
 		return 'true';
-		
 	};
 	
-	return{ validate: validate };
+	var logout = function () {
+		//TODO: fetch entry from login table, compare provided password
+		//if true Reroute to home, else error message.
+		$location.path('/login');
+		login = 'false'; 
+		return 'true';
+	};
+	
+	return{ login: login,
+			logout: logout};
 }]);

@@ -1,4 +1,22 @@
-body {
+#eula-div {
+	background-image: url("../textures/clouds.jpg");
+}
+
+#eula-p {
+	background-image: url("../textures/white-paper.jpg");
+}
+
+#eula-accept-btn {
+	max-width:30%;
+	min-width:30%;
+	border-radius:4px;
+	margin-left:35%;
+	margin-right:35%;
+	margin-top:2%;
+	font-size:1.25em;
+}
+
+#login-div {
 	background-image: url("../textures/sage-green-paper.jpg");
 }
 
@@ -29,7 +47,7 @@ body {
 	margin-bottom:1%;
 	border-width:2px;
 	border-radius:4px;
-	border-style: outset;
+	border-style: inset;
 	font-size:1.375em;
 }
 
@@ -43,7 +61,7 @@ body {
 	margin-bottom:1%;
 	border-width:2px;
 	border-radius:4px;
-	border-style: outset;
+	border-style: inset;
 	font-size:1.375em;
 }
 

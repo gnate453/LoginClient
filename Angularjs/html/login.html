@@ -1,53 +1,34 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
-		<link rel="stylesheet" type="text/css" href="login.css">
-	</head>	
 
-	
-	<body>
-		<div ng-app="loginApp" ng-controller="LoginController as loginCTRL">
-			<form id="login-frm" name="loginForm" ng-hide="loginValid" novalidate>
-				<h1 id="login-head">Login:</h1>
-				<div>
-					<input id="character-in" type="text" name="user" placeholder="Character Name" ng-model="credentials.username" 
-					ng-minlength="3" ng-maxlength="27" ng-pattern="/^[a-z]+$/i" required><br>
-						<span id="user-err" ng-show="loginForm.user.$invalid">
-								<span ng-show="loginForm.user.$dirty && 
-								loginForm.user.$error.minlength">Minimum length not met. Three characters are required.</span>
-								<span ng-show="loginForm.user.$dirty && 
-								loginForm.user.$error.maxlength">Maximum length exceeded. Limit is twenty-seven characters.</span>
-								<span ng-show="loginForm.user.$dirty && 
-								loginForm.user.$error.pattern">Invalid name.  Only alphabetical characters are allowed.</span>
-						</span>
-					<br>
-					<input id="password-in" type="password" name="pass" placeholder="Password" ng-model="credentials.password" 
-					ng-minlength="6" ng-maxlength="27" ng-pattern="/^[a-zA-Z0-9_!@#$%^&+-]+$/" required><br>
-	  					<span id="pass-err" ng-show="loginForm.pass.$invalid">
-	  						<span ng-show="loginForm.pass.$dirty && 
-	  						loginForm.pass.$error.minlength">Minimum length not met. Six characters are required.</span>
-	  						<span ng-show="loginForm.user.$dirty && 
-								loginForm.user.$error.maxlength">Maximum length exceeded. Limit is twenty-seven characters.</span>
-	  						<span ng-show="loginForm.pass.$dirty && 
-	  						loginForm.pass.$error.pattern">Entry contains invalid characters. 
-	  						Valid characters are alphanumeric and (!@#$%^&+-_).</span>
-	  					</span>
-					<br><button id="login-btn" ng-disabled="loginForm.user.$invalid || loginForm.pass.$invalid" ng-click="login()">Login</button>
-				</div>
-			</form>
-			<div ng-show="loginValid">
-				<h2>Hey there, <i ng-bind="login.username"></i>!</h2>
-				<br>
-				<button ng-click="logout()">Logout</button>
-			</div>
-		</div>	
-			
-			
-		<script src="../scripts/app.js"></script>
-		<script src="../scripts/loginsrvc.js"></script>
-		<script src="../scripts/loginctrl.js"></script>
-	</body>
+<div id="login-div" ng-controller="LoginController as loginCTRL">
+	<form id="login-frm" name="loginForm" novalidate>
+		<h1 id="login-head">Login:</h1>
+		<div>
+			<input id="character-in" type="text" name="user" placeholder="Character Name" ng-model="credentials.username" 
+			ng-minlength="3" ng-maxlength="27" ng-pattern="/^[a-z]+$/i" required><br>
+				<span id="user-err" ng-show="loginForm.user.$invalid">
+						<span ng-show="loginForm.user.$dirty && 
+						loginForm.user.$error.minlength">Minimum length not met. Three characters are required.</span>
+						<span ng-show="loginForm.user.$dirty && 
+						loginForm.user.$error.maxlength">Maximum length exceeded. Limit is twenty-seven characters.</span>
+						<span ng-show="loginForm.user.$dirty && 
+						loginForm.user.$error.pattern">Invalid name.  Only alphabetical characters are allowed.</span>
+				</span>
+			<br>
+			<input id="password-in" type="password" name="pass" placeholder="Password" ng-model="credentials.password" 
+			ng-minlength="6" ng-maxlength="27" ng-pattern="/^[a-zA-Z0-9_!@#$%^&+-]+$/" required><br>
+ 					<span id="pass-err" ng-show="loginForm.pass.$invalid">
+ 						<span ng-show="loginForm.pass.$dirty && 
+ 						loginForm.pass.$error.minlength">Minimum length not met. Six characters are required.</span>
+ 						<span ng-show="loginForm.user.$dirty && 
+						loginForm.user.$error.maxlength">Maximum length exceeded. Limit is twenty-seven characters.</span>
+ 						<span ng-show="loginForm.pass.$dirty && 
+ 						loginForm.pass.$error.pattern">Entry contains invalid characters. 
+ 						Valid characters are alphanumeric and (!@#$%^&+-_).</span>
+ 					</span>
+			<br><button id="login-btn" ng-disabled="loginForm.user.$invalid || loginForm.pass.$invalid" ng-click="login()">Login</button>
+		</div>
+	</form>
+</div>	
 
-
-</html>
+<script src="../scripts/loginsrvc.js"></script>
+<script src="../scripts/loginctrl.js"></script>
