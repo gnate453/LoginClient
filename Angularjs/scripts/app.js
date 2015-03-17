@@ -1,6 +1,7 @@
-angular.module('mapGameApp', ['ngRoute']);
+angular.module('mapGameApp', ['ngRoute', 'EulaController', 'LoginController', 'HomeController']);
 
-angular.module('mapGameApp').config(['$routeProvider', function($routeProvider) {
+angular.module('mapGameApp').config(['$routeProvider', 'EulaController', 'LoginController', 'HomeController',
+  function($routeProvider, EulaController, LoginController, HomeController) {
 	$routeProvider.when('/index',
 		{redirectTo: '/eula'}).
 	when('/eula', {
