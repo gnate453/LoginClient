@@ -7,9 +7,9 @@
 
 	
 	<body>
-		<h1 id="login-head">Login:</h1>
 		<div ng-app="loginApp" ng-controller="LoginController as loginCTRL">
 			<form id="login-frm" name="loginForm" ng-hide="loginValid" novalidate>
+				<h1 id="login-head">Login:</h1>
 				<div>
 					<input id="character-in" type="text" name="user" placeholder="Character Name" ng-model="credentials.username" 
 					ng-minlength="3" ng-maxlength="27" ng-pattern="/^[a-z]+$/i" required><br>
