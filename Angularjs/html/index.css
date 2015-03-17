@@ -1,13 +1,14 @@
 #index-body {
-	background-image: url("../textures/clouds.jpg");
+	background-image: url("../textures/green-abstract.jpg");
 }
 
 #eula-div {
-	background-image: url("../textures/cement.jpg");
-}
-
-#eula-span {
 	background-image: url("../textures/white-paper.jpg");
+	max-width:80%;
+	min-width:80%;
+	margin-top:10%;
+	margin-left:10%;
+	margin-right:10%;
 }
 
 #eula-accept-btn {
@@ -18,10 +19,6 @@
 	margin-right:35%;
 	margin-top:2%;
 	font-size:1.25em;
-}
-
-#login-div {
-	background-image: url("../textures/sage-green-paper.jpg");
 }
 
 #login-head {
