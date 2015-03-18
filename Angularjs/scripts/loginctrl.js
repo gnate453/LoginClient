@@ -1,9 +1,7 @@
 
 angular.module('mapGameApp')
-.controller('LoginController',['$scope', 'loginService', function ($scope, loginService) {
-	$scope.credentials =  { username:"", password:""};
-	
+.controller('LoginController',['$scope', 'sessionService', function ($scope, sessionService) {
 	$scope.login = function login(){
-		loginService.login($scope.credentials);
+		sessionService.login();
 	}
 }]);

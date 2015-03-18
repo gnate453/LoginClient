@@ -1,7 +1,6 @@
 angular.module('mapGameApp')
-.controller('HomeController',['$scope', 'loginService', function ($scope, loginService) {
-
+.controller('HomeController',['$scope', 'sessionService', function ($scope, sessionService) {
 	$scope.logout = function logout(){
-		loginService.logout();
+		sessionService.logout();
 	}
 }]);

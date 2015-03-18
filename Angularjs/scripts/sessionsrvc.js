@@ -2,10 +2,10 @@
  * 
  */
 angular.module('mapGameApp')
-.factory('loginService', ['$location', function ($location) {
-
+.factory('sessionService', ['$scope', '$location', function ($location) {
+	$scope.credentials =  { username:"", password:""};
 	
-	var login = function (credentials) {
+	$scope.login = function () {
 		credentials.password="";
 		//TODO: fetch entry from login table, compare provided password
 		//if true Reroute to home, else error message.
@@ -14,7 +14,7 @@ angular.module('mapGameApp')
 		return 'true';
 	};
 	
-	var logout = function () {
+	$scope.logout = function () {
 		$location.path('/login');
 		login = 'false'; 
 		return 'true';

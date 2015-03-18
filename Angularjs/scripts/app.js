@@ -1,7 +1,7 @@
 angular.module('mapGameApp', ['ngRoute']);
 
 angular.module('mapGameApp').config(['$routeProvider', function($routeProvider) {
-	$routeProvider.when('/index',
+	$routeProvider.when('/MapGame',
 		{redirectTo: '/eula'}).
 	when('/eula', {
 		templateUrl: 'eula.html',
@@ -15,5 +15,5 @@ angular.module('mapGameApp').config(['$routeProvider', function($routeProvider) 
 		templateUrl: 'home.html',
 		controller: 'HomeController'
 	}).
-	otherwise({redirectTo: '/index'});
+	otherwise({redirectTo: '/MapGame'});
 }]);
