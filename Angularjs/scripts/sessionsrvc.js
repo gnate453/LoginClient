@@ -2,7 +2,7 @@
  * 
  */
 angular.module('mapGameApp')
-.factory('sessionService', ['$scope', '$location', function ($location) {
+.factory('sessionService', ['$scope', '$location', function ($scope, $location) {
 	$scope.credentials =  { username:"", password:""};
 	
 	$scope.login = function () {
