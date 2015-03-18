@@ -58,16 +58,16 @@
 }
 
 #login-label-span {
-	margin-left:3%;
+	margin-left:14%;
 	font-size: 2em;
 }
 
 #character-in {
 	background-color:LightGray;
-	max-width:80%;
-	min-width:80%;
-	margin-left:3%;
-	margin-right:15%;
+	max-width:70%;
+	min-width:70%;
+	margin-left:14%;
+	margin-right:14%;
 	margin-top:1%;
 	border-width:2px;
 	border-radius:4px;
@@ -78,20 +78,20 @@
 #user-err {
 	color:red;
 	min-height: 1.25em;
-	max-width:80%;
-	min-width:80%;
-	margin-left:3%;
-	margin-right:15%;
+	max-width:70%;
+	min-width:70%;
+	margin-left:14%;
+	margin-right:14%;
 	margin-top:1%;
 	font-size:1.2em;
 }
 
 #password-in {
 	background-color:LightGray;
-	max-width:80%;
-	min-width:80%;
-	margin-left:3%;
-	margin-right:15%;
+	max-width:70%;
+	min-width:70%;
+	margin-left:14%;
+	margin-right:14%;
 	margin-top:1%;
 	border-width:2px;
 	border-radius:4px;
@@ -102,19 +102,19 @@
 #pass-err {
 	color:red;
 	min-height: 1.25em;
-	max-width:80%;
-	min-width:80%;
-	margin-left:3%;
-	margin-right:15%;
+	max-width:70%;
+	min-width:70%;
+	margin-left:14%;
+	margin-right:14%;
 	margin-top:1%;
 	font-size:1.2em;
 }
 
 #login-btn {
-	max-width:40%;
-	min-width:40%;
-	margin-left:24%;
-	margin-right:34%;
+	max-width:30%;
+	min-width:30%;
+	margin-left:54%;
+	margin-right:14%;
 	margin-top:1%;
 	margin-bottom:1%;
 	border-radius:4px;
