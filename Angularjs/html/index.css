@@ -57,11 +57,11 @@
 
 #login-div {
 	background-image: url("../textures/white-paper.jpg");
-	max-width:80%;
-	min-width:80%;
+	max-width:60%;
+	min-width:60%;
 	margin-top:11%;
-	margin-left:10%;
-	margin-right:10%;
+	margin-left:20%;
+	margin-right:20%;
 	padding:1%;
 	border-width:4px;
 	border-radius:4px;
