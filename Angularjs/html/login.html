@@ -1,5 +1,5 @@
 <div id="login-div">
-	<h1 id="login-head">Login:</h1>
+	<span id="login-label-span">Login:</span>
 	<form name="loginForm"  ng-controller="LoginController as loginCTRL" novalidate>
 		<input id="character-in" type="text" name="user" placeholder="Character Name" ng-model="credentials.username" 
 		ng-minlength="3" ng-maxlength="27" ng-pattern="/^[a-z]+$/i" required><br>

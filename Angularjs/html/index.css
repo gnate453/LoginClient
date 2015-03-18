@@ -57,8 +57,9 @@
 	border-style: outset;
 }
 
-#login-head {
+#login-label-span {
 	margin-left:4%;
+	font-size: 2em;
 }
 
 #character-in {
