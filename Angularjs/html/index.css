@@ -58,7 +58,7 @@
 }
 
 #login-label-span {
-	margin-left:4%;
+	margin-left:3%;
 	font-size: 2em;
 }
 
@@ -66,8 +66,8 @@
 	background-color:LightGray;
 	max-width:80%;
 	min-width:80%;
-	margin-left:4%;
-	margin-right:14%;
+	margin-left:3%;
+	margin-right:15%;
 	margin-top:1%;
 	border-width:2px;
 	border-radius:4px;
@@ -80,8 +80,8 @@
 	min-height: 1.25em;
 	max-width:80%;
 	min-width:80%;
-	margin-left:4%;
-	margin-right:14%;
+	margin-left:3%;
+	margin-right:15%;
 	margin-top:1%;
 	font-size:1.2em;
 }
@@ -90,8 +90,8 @@
 	background-color:LightGray;
 	max-width:80%;
 	min-width:80%;
-	margin-left:4%;
-	margin-right:14%;
+	margin-left:3%;
+	margin-right:15%;
 	margin-top:1%;
 	border-width:2px;
 	border-radius:4px;
@@ -104,17 +104,17 @@
 	min-height: 1.25em;
 	max-width:80%;
 	min-width:80%;
-	margin-left:4%;
-	margin-right:14%;
+	margin-left:3%;
+	margin-right:15%;
 	margin-top:1%;
 	font-size:1.2em;
 }
 
 #login-btn {
-	max-width:50%;
-	min-width:50%;
+	max-width:40%;
+	min-width:40%;
 	margin-left:24%;
-	margin-right:24%;
+	margin-right:34%;
 	margin-top:1%;
 	margin-bottom:1%;
 	border-radius:4px;
