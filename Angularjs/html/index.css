@@ -64,10 +64,10 @@
 
 #character-in {
 	background-color:LightGray;
-	max-width:90%;
-	min-width:90%;
+	max-width:80%;
+	min-width:80%;
 	margin-left:4%;
-	margin-right:4%;
+	margin-right:14%;
 	margin-top:1%;
 	border-width:2px;
 	border-radius:4px;
@@ -77,21 +77,21 @@
 
 #user-err {
 	color:red;
-	max-width:90%;
-	min-width:90%;
 	min-height: 1.25em;
+	max-width:80%;
+	min-width:80%;
 	margin-left:4%;
-	margin-right:4%;
+	margin-right:14%;
 	margin-top:1%;
 	font-size:1.2em;
 }
 
 #password-in {
 	background-color:LightGray;
-	max-width:90%;
-	min-width:90%;
+	max-width:80%;
+	min-width:80%;
 	margin-left:4%;
-	margin-right:4%;
+	margin-right:14%;
 	margin-top:1%;
 	border-width:2px;
 	border-radius:4px;
@@ -101,11 +101,11 @@
 
 #pass-err {
 	color:red;
-	max-width:90%;
-	min-width:90%;
 	min-height: 1.25em;
+	max-width:80%;
+	min-width:80%;
 	margin-left:4%;
-	margin-right:4%;
+	margin-right:14%;
 	margin-top:1%;
 	font-size:1.2em;
 }
