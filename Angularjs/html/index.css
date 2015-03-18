@@ -44,7 +44,7 @@
 	font-size:1.25em;
 }
 
-#login-frm {
+#login-div {
 	background-image: url("../textures/white-paper.jpg");
 	max-width:80%;
 	min-width:80%;
@@ -58,7 +58,7 @@
 }
 
 #login-head {
-	margin-left:5%;
+	margin-left:4%;
 }
 
 #character-in {
