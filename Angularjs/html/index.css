@@ -15,12 +15,11 @@
 	border-style: outset;
 }
 
-#eula-info-span {
+#eula-info-div {
 	max-width:90%;
 	min-width:90%;
-	margin-left:9%;
-	margin-right:9%;
-	padding:1%;
+	margin-left:4%;
+	margin-right:4%;
 	font-size:1.25em;
 }
 
