@@ -57,11 +57,11 @@
 
 #login-div {
 	background-image: url("../textures/white-paper.jpg");
-	max-width:60%;
-	min-width:60%;
+	max-width:45%;
+	min-width:45%;
 	margin-top:11%;
-	margin-left:20%;
-	margin-right:20%;
+	margin-left:27%;
+	margin-right:28%;
 	padding:1%;
 	border-width:4px;
 	border-radius:4px;
@@ -76,10 +76,10 @@
 
 #character-in {
 	background-color:LightGray;
-	max-width:70%;
-	min-width:70%;
-	margin-left:14%;
-	margin-right:14%;
+	max-width:80%;
+	min-width:80%;
+	margin-left:9%;
+	margin-right:9%;
 	margin-top:1%;
 	border-width:2px;
 	border-radius:4px;
@@ -90,20 +90,20 @@
 #user-err {
 	color:red;
 	min-height: 1.25em;
-	max-width:70%;
-	min-width:70%;
-	margin-left:14%;
-	margin-right:14%;
+	max-width:80%;
+	min-width:80%;
+	margin-left:9%;
+	margin-right:9%;
 	margin-top:1%;
 	font-size:1.2em;
 }
 
 #password-in {
 	background-color:LightGray;
-	max-width:70%;
-	min-width:70%;
-	margin-left:14%;
-	margin-right:14%;
+	max-width:80%;
+	min-width:80%;
+	margin-left:9%;
+	margin-right:9%;
 	margin-top:1%;
 	border-width:2px;
 	border-radius:4px;
@@ -114,10 +114,10 @@
 #pass-err {
 	color:red;
 	min-height: 1.25em;
-	max-width:70%;
-	min-width:70%;
-	margin-left:14%;
-	margin-right:14%;
+	max-width:80%;
+	min-width:80%;
+	margin-left:9%;
+	margin-right:9%;
 	margin-top:1%;
 	font-size:1.2em;
 }
@@ -125,8 +125,8 @@
 #login-login-btn {
 	max-width:30%;
 	min-width:30%;
-	margin-left:54%;
-	margin-right:14%;
+	margin-left:59%;
+	margin-right:9%;
 	margin-top:1%;
 	margin-bottom:1%;
 	border-radius:4px;
