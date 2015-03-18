@@ -46,7 +46,6 @@
 
 #login-head {
 	margin-left:5%;
-	margin-bottom:0.5%;
 }
 
 #login-frm {
@@ -69,21 +68,6 @@
 	margin-left:4%;
 	margin-right:4%;
 	margin-top:1%;
-	margin-bottom:1%;
-	border-width:2px;
-	border-radius:4px;
-	border-style: inset;
-	font-size:1.375em;
-}
-
-#password-in {
-	background-color:LightGray;
-	max-width:90%;
-	min-width:90%;
-	margin-left:4%;
-	margin-right:4%;
-	margin-top:1%;
-	margin-bottom:1%;
 	border-width:2px;
 	border-radius:4px;
 	border-style: inset;
@@ -98,8 +82,20 @@
 	margin-left:4%;
 	margin-right:4%;
 	margin-top:1%;
-	margin-bottom:1%;
 	font-size:1.2em;
+}
+
+#password-in {
+	background-color:LightGray;
+	max-width:90%;
+	min-width:90%;
+	margin-left:4%;
+	margin-right:4%;
+	margin-top:1%;
+	border-width:2px;
+	border-radius:4px;
+	border-style: inset;
+	font-size:1.375em;
 }
 
 #pass-err {
@@ -110,7 +106,6 @@
 	margin-left:4%;
 	margin-right:4%;
 	margin-top:1%;
-	margin-bottom:1%;
 	font-size:1.2em;
 }
 
